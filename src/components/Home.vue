@@ -32,8 +32,9 @@ export default {
             },
             {
             title: '我的会员',
-            path: '/my'
+            path: '/memberships'
             },
+            
             {
             title: '积分明细',
             path: '/integral'

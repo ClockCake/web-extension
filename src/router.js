@@ -3,6 +3,7 @@ import Router from "vue-router";
 import HomePage from "./components/Home.vue";
 import LevelaPage from "./components/Level.vue";
 import ScoreDetail from "./components/ScoreDetail.vue";
+import MemberShips from "./components/MemberShips.vue";
 Vue.use(Router);
 const routes = [
     {
@@ -14,6 +15,11 @@ const routes = [
         path : "/level",
         component: LevelaPage,
         name: "LevelaPage"
+    },
+    {
+        path: "/memberships",
+        component: MemberShips,
+        name: "MemberShips"
     },
     {
         path: "/integral",
