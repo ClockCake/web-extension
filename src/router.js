@@ -1,9 +1,10 @@
 import Vue from "vue";
 import Router from "vue-router";
-import HomePage from "./components/Home.vue";
-import LevelaPage from "./components/Level.vue";
-import ScoreDetail from "./components/ScoreDetail.vue";
-import MemberShips from "./components/MemberShips.vue";
+import HomePage from "./pages/Home.vue";
+import LevelaPage from "./pages/Level.vue";
+import ScoreDetail from "./pages/ScoreDetail.vue";
+import MemberShips from "./pages/MemberShips.vue";
+import BudgetPage from "./pages/Budget.vue";
 Vue.use(Router);
 const routes = [
     {
@@ -25,6 +26,11 @@ const routes = [
         path: "/integral",
         component:ScoreDetail,
         name: "ScoreDetail"
+    },
+    {
+        path: "/budget",
+        component:BudgetPage,
+        name: "BudgetPage"
     }
 ]
 const router = new Router({

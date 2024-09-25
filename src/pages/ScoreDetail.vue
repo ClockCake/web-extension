@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import TimeFilter from './TimeFilter.vue';
+import TimeFilter from '../components/TimeFilter.vue';
 export default{
     name: 'ScoreDetail',
     components: {

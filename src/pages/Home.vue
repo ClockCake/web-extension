@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import ShaderBackground from './ShaderBackground.vue';
+import ShaderBackground from '../components/ShaderBackground.vue';
 export default {
     name: 'HomePage',
     components: {
@@ -27,17 +27,20 @@ export default {
         title: '极家汇 App Web 扩展页',
         views:[
             {
-            title: '会员等级',
-            path: '/level'
+              title: '会员等级',
+              path: '/level'
             },
             {
-            title: '我的会员',
-            path: '/memberships'
+              title: '我的会员',
+              path: '/memberships'
             },
-            
             {
-            title: '积分明细',
-            path: '/integral'
+              title: '积分明细',
+              path: '/integral'
+            },
+            {
+              title: '工程预算书',
+              path: '/budget'
             }
         ]
     }
