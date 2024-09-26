@@ -4,7 +4,7 @@
     <div class="font-bold text-md text-222222 mt-4">确认签字</div>
     <p class="text-999999 text-xs mt-2">请在下方输写框内用正楷字体书写您的姓名，保持字迹清晰、完整。</p>
     <SignatureComponent class="mt-4" :width="signatureWidth" :height="signatureHeight"/>
-</div>
+  </div>
 </template>
 
 <script>
@@ -14,17 +14,15 @@ export default {
   data() {
     return {
         image: 'https://image.itimes.me/i/2024/07/26/66a30d068028b.jpg',
-        
+        //屏幕宽度
+        signatureWidth: window.innerWidth - 40,
+        signatureHeight: 200
     }
   },
   components: {
     SignatureComponent
   },
-  computed: {
-    //屏幕宽度
-    signatureWidth: window.innerWidth - 15,
-    signatureHeight: 250
-  },
+ 
   methods: {
     //保存签名 转换数据
     saveSignature() {
