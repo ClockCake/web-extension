@@ -2,7 +2,7 @@
 <div class="container mx-auto flex flex-col justify-start items-start h-screen space-x-4">
     <img v-bind:src="image" alt="header" class="h-1/2 w-full">
     <div class="font-bold text-md text-222222 mt-4">确认签字</div>
-    <p class="text-999999 text-xs mt-2">请在下方输写框内用正楷字体书写您的姓名，保持字迹清晰、完整。</p>
+    <p class="text-999999 text-xs mt-2 text-left">请在下方输写框内用正楷字体书写您的姓名，保持字迹清晰、完整。</p>
     <SignatureComponent class="mt-4" :width="signatureWidth" :height="signatureHeight"/>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
     return {
         image: 'https://image.itimes.me/i/2024/07/26/66a30d068028b.jpg',
         //屏幕宽度
-        signatureWidth: window.innerWidth - 40,
+        signatureWidth: window.innerWidth > 1024 ? window.innerWidth * 0.65 : window.innerWidth - 40,
         signatureHeight: 200
     }
   },
