@@ -41,6 +41,11 @@ export default {
             {
               title: '工程预算书',
               path: '/budget'
+            },
+            {
+              title: '3D 模型',
+              path: '/preview'
+
             }
         ]
     }

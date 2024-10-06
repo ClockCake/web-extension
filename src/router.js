@@ -5,6 +5,7 @@ import LevelaPage from "./pages/Level.vue";
 import ScoreDetail from "./pages/ScoreDetail.vue";
 import MemberShips from "./pages/MemberShips.vue";
 import BudgetPage from "./pages/Budget.vue";
+import ModelViewer from "./pages/ModelViewer.vue";
 Vue.use(Router);
 const routes = [
     {
@@ -31,6 +32,11 @@ const routes = [
         path: "/budget",
         component:BudgetPage,
         name: "BudgetPage"
+    },
+    {
+        path: "/preview",
+        component:ModelViewer,
+        name: "ModelViewer"
     }
 ]
 const router = new Router({
